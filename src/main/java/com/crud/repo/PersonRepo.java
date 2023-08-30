@@ -13,7 +13,7 @@ public class PersonRepo {
 
 	private List<Person> list = new ArrayList<Person>();
 
-	public List<Person> getAll() {
+	public void getAll() {
 		list.add(new Person(1, "Trinh Minh Cuong", "Developer", true, "1975-11-27"));
 		list.add(new Person(2, "Mary Jane", "Banker", false, "1980-05-24"));
 		list.add(new Person(3, "Tom Sawyer", "Taxi Driver", true, "1990-08-09"));
