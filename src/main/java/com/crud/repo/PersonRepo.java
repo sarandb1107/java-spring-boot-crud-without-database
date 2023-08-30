@@ -13,15 +13,21 @@ public class PersonRepo {
 
 	private List<Person> list = new ArrayList<Person>();
 
-	public void getAll() {
-		List<Person> list = List.of(new Person(1, "Trinh Minh Cuong", "Developer", true, "1975-11-27"),
-				new Person(2, "Mary Jane", "Banker", false, "1980-05-24"),
-				new Person(3, "Tom Sawyer", "Taxi Driver", true, "1990-08-09"));
-		for (Person person : list) {
-			list.add(person);
-		}
-
+	public List<Person> getAll() {
+		list.add(new Person(1, "Trinh Minh Cuong", "Developer", true, "1975-11-27"));
+		list.add(new Person(2, "Mary Jane", "Banker", false, "1980-05-24"));
+		list.add(new Person(3, "Tom Sawyer", "Taxi Driver", true, "1990-08-09"));
 	}
+
+	// public void getAll() {
+	// 	List<Person> list = List.of(new Person(1, "Trinh Minh Cuong", "Developer", true, "1975-11-27"),
+	// 			new Person(2, "Mary Jane", "Banker", false, "1980-05-24"),
+	// 			new Person(3, "Tom Sawyer", "Taxi Driver", true, "1990-08-09"));
+	// 	for (Person person : list) {
+	// 		list.add(person);
+	// 	}
+
+	// }
 
 	public List<Person> listPerson() {
 		return list;
